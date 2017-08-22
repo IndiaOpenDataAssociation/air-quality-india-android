@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/match_match"
+    android:layout_gravity="center"
+    android:background="@android:color/white"
+    tools:context=".Ui.AddDevice">
+
+    <include
+        android:id="@+id/toolBar"
+        style="@style/match_wrap"
+        layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:id="@+id/productHolder"
+        style="@style/header"
+        android:layout_below="@+id/toolBar"
+        android:background="@color/blue"
+        android:gravity="center">
+
+        <TextView
+            style="@style/wrap_wrap"
+            android:gravity="center"
+            android:text="@string/selectPro"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:typeface="sans" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/match_match"
+        android:layout_below="@id/productHolder"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/match_wrap"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgairOwlWifi"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:src="@drawable/air_owl_wifi" />
+
+            <ImageView
+                android:id="@+id/imgairOwlCell"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:src="@drawable/air_owl_g" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

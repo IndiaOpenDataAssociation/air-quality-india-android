@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <include
+        android:id="@+id/toolBar"
+        style="@style/match_wrap"
+        layout="@layout/toolbar"
+        android:visibility="visible" />
+
+
+    <RelativeLayout
+        android:id="@+id/productHolder"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_below="@+id/toolBar"
+        android:background="@color/blue"
+        android:gravity="center"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/tvbrathi"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:src="@drawable/air_owl_logo" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/productHolder"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:weightSum="13">
+
+        <ImageView
+            android:id="@+id/imgairOwl"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:layout_weight="1"
+            android:src="@drawable/airowl_connect" />
+
+        <Spinner
+            android:id="@+id/airOwlid"
+            style="@style/match_wrap.Spinner.Et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:dropDownWidth="match_parent"
+            android:entries="@array/navDrawerItems" />
+
+        <Button
+            android:id="@+id/btnConnect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_weight="0.5"
+            android:background="@drawable/customborder"
+            android:padding="@dimen/pading_appscreen"
+            android:stateListAnimator="@null"
+            android:text="@string/btnConnect"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:typeface="sans" />
+
+        <Button
+            android:id="@+id/btnSkip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_weight="0.5"
+            android:background="@drawable/customborder"
+            android:padding="@dimen/pading_appscreen"
+            android:stateListAnimator="@null"
+            android:text="@string/skipStep"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:typeface="sans"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/blue">
+    <item>
+        <selector xmlns:android="http://schemas.android.com/apk/res/android">
+            <!-- Pressed -->
+            <item
+                android:drawable="@color/blue"
+                android:state_pressed="true" />
+            <!-- Selected -->
+            <item
+                android:drawable="@color/textColor"
+                android:state_selected="true" />
+            <!-- Focus -->
+            <item
+                android:drawable="@color/bg"
+                android:state_focused="true" />
+            <!-- Default -->
+            <item android:drawable="@android:color/transparent" />
+        </selector>
+    </item>
+</ripple>

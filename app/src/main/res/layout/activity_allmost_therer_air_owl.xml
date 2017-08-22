@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relMainAllmostDone"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <include
+        android:id="@+id/toolBar"
+        style="@style/match_wrap"
+        layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:id="@+id/productHolder"
+        style="@style/header"
+        android:layout_below="@+id/toolBar"
+        android:background="@color/blue"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/tvAirOwl"
+            android:layout_width="140dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/air_owl_logo" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/productHolder"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:weightSum="13">
+
+        <TextView
+            android:id="@+id/LblairOwlid"
+            style="@style/wrap_wrap_tv_label_large"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/ic_action_info_blue"
+            android:gravity="center"
+            android:text="@string/lblAllmost"
+            android:textColor="@color/AqiavgColor" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgActivity1"
+                android:layout_width="80dp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_weight="1"
+                android:src="@drawable/airowl" />
+
+            <ImageView
+                android:id="@+id/imgActivity2"
+                android:layout_width="80dp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_weight="1"
+                android:src="@drawable/arrow1" />
+
+            <ImageView
+                android:id="@+id/imgActivity3"
+                android:layout_width="80dp"
+                android:layout_height="@dimen/_55sdp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:src="@drawable/wifi" />
+
+        </LinearLayout>
+
+
+        <TextView
+            style="@style/match_wrap.small_txt"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/pading15"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/msgPlease"
+            android:textColor="@color/aqiColor" />
+
+        <TextView
+            style="@style/match_wrap.small_txt"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/hintflowWifi"
+            android:textColor="@color/blue" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="@string/ledIndication"
+            android:textAlignment="center"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="@string/pinkIndication"
+            android:textAlignment="center"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="normal"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="3dp"
+            android:text="@string/cyanIndication"
+            android:textAlignment="center"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="normal"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="3dp"
+            android:text="@string/blueIndication"
+            android:textAlignment="center"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="normal"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="3dp"
+            android:text="@string/magentaIndication"
+            android:textAlignment="center"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="normal"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnDone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/customborder"
+                android:gravity="center"
+                android:stateListAnimator="@null"
+                android:text="@string/done"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:typeface="sans" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

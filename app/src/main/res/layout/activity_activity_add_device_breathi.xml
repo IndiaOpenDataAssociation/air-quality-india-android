@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayoutAddDeviceBreathi"
+    style="@style/match_match"
+    android:background="@android:color/white"
+    tools:context=".Breath_i.AddDeviceBreathi">
+
+    <include
+        android:id="@+id/toolBar"
+        style="@style/match_wrap"
+        layout="@layout/toolbar" />
+
+
+    <RelativeLayout
+        android:id="@+id/productHolder"
+        style="@style/header"
+        android:layout_below="@+id/toolBar"
+        android:background="@color/blue"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tvbrathi"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/BreathI"
+            android:textColor="@android:color/white"
+            android:textSize="25sp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/productHolder">
+
+        <LinearLayout
+            style="@style/match_match"
+
+            android:orientation="vertical"
+            android:padding="15dp"
+            android:weightSum="5">
+
+            <ImageView
+                android:id="@+id/imgairOwl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_85sdp"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:src="@drawable/breath_i_connect" />
+
+            <Spinner
+                android:id="@+id/breathi"
+                style="@style/match_wrap.Spinner.Et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:dropDownWidth="match_parent"
+                android:entries="@array/navDrawerItems"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/LblBreathi"
+                style="@style/wrap_wrap_tv_label_large"
+                android:layout_weight="1"
+                android:drawableRight="@drawable/ic_action_info_blue"
+                android:gravity="center"
+                android:text="@string/step1_breathi"
+                android:textSize="20sp" />
+
+            <TextView
+                style="@style/match_wrap.small_txt"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/msg_breathi"
+                android:textColor="@color/textColor" />
+
+            <EditText
+                android:id="@+id/breathiSerial"
+                style="@style/wrap_wrap.action.blue_oval_et"
+                android:layout_marginTop="25dp"
+                android:hint="@string/hintserial"
+                android:inputType="text"
+                android:maxLength="5"
+                android:maxLines="1" />
+
+
+            <Button
+                android:id="@+id/btnConnectBreathi"
+                style="@style/btn_blue"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:gravity="center"
+                android:stateListAnimator="@null"
+                android:text="@string/btnConnect" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

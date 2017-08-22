@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <include
+        android:id="@+id/toolBar"
+        layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:id="@+id/productHolder"
+        style="@style/header"
+        android:layout_below="@+id/toolBar"
+        android:background="@color/blue"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/tvbrathi"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:src="@drawable/air_owl_logo" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:weightSum="1"
+        android:padding="@dimen/pading15"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/productHolder"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_weight="1"
+            android:id="@+id/wifiImg"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:focusableInTouchMode="false"
+            android:src="@drawable/wifi" />
+
+        <TextView
+            android:layout_weight="0.5"
+            style="@style/match_wrap._tv_label_medium"
+            android:layout_below="@+id/wifiImg"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="@string/txtChoseWifi" />
+
+
+        <!--EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/F0F3F4"
+            android:hint="@string/hintWifi"
+            android:padding="@dimen/pading15"
+            android:id="@+id/airOwlWifiSSID"
+            android:typeface="sans" /-->
+
+        <Spinner
+            android:id="@+id/airOwlWifiSelect"
+            style="@style/match_wrap.Spinner.Et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:dropDownWidth="match_parent"
+            android:entries="@array/navDrawerItems" />
+
+        <EditText
+            android:id="@+id/airOwlWifiPass"
+            style="@style/wrap_wrap.action.blue_oval_et"
+            android:layout_marginTop="@dimen/margin15"
+            android:background="@drawable/text_background_blue"
+            android:hint="@string/hintPassword"
+
+            android:inputType="textPassword"/>
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            android:buttonTint="@color/hintColor"
+            android:text="Show password"
+            android:textColor="@color/hintColor"
+            android:typeface="sans" />
+
+
+        <Button
+            style="@style/btn_blue"
+            android:id="@+id/btnConnect"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:stateListAnimator="@null"
+            android:text="@string/btnConnect"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

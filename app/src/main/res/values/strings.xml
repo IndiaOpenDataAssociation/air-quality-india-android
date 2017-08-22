@@ -1,0 +1,247 @@
+<resources>
+
+    <string-array name="navDrawerItems">
+        <item>Profile</item>
+        <item>News Feed</item>
+        <item>Save Job</item>
+        <item>Search</item>
+        <item>Contact TPO</item>
+        <item>About US</item>
+        <item>Recruiters</item>
+        <item>Tips</item>
+        <item>FAQ</item>
+        <item>Inquiry</item>
+        <item>Settings</item>
+    </string-array>
+
+    <string name="google_api_key">AIzaSyCQQcPnEDl8_Qw6F0bRXnemdsuLwhIN4Yo</string>
+    <string name="app_id">1183248778427503</string>
+    <!-- Hint -->
+    <string name="refresh_icon">&#xf3a8;</string>
+    <string name="share_icon">&#xf3ac;</string>
+
+    <string name="hintEmaul">Email</string>
+    <string name="hintUsername">Username</string>
+    <string name="hintPassword">Password</string>
+    <string name="hintWifi">Select wifi</string>
+    <string name="hintlogin">Email/Username</string>
+    <string name="hintserial">Enter serial number..</string>
+    <string name="hitCurrentPass">Current Password</string>
+    <string name="hintNewPass">New Password</string>
+    <string name="hintConformPass">Confirm Password</string>
+    <string name="hintName">Name</string>
+    <string name="hintAddress">Address</string>
+
+    <string name="app_name">Air Quality India</string>
+    <string name="txtSignup">SIGN UP</string>
+    <string name="login_google">LOGIN WITH GOOGLE</string>
+    <string name="login_facebook">LOGIN WITH FACEBOOK</string>
+    <string name="txtLogin">LOGIN</string>
+    <string name="selectPro">SELECT PRODUCT</string>
+    <string name="BreathI">Breath-i</string>
+    <string name="txtBreathi">Add code display on device screen</string>
+    <string name="txtChoseWifi">Choose wifi</string>
+    <string name="btnConnect">CONNECT</string>
+    <string name="home">Home</string>
+    <string name="analytics">Analytics</string>
+    <string name="device">Device</string>
+    <string name="community">Community</string>
+    <string name="other">More</string>
+    <string name="txtlogin">Login</string>
+
+    <string name="tittle_global">GLOBAL</string>
+    <string name="txtDevice">NO PERSONAL DEVICE ADDED</string>
+    <string name="Features1">1.7GHz Intel Pentium processor</string>
+    <string name="Features2">4GB DDR3L 1600Mhz</string>
+    <string name="Features3">500GB Hard drive</string>
+    <string name="Specification">Pellentesque vitae magna lorem. Donec lobortis a diam non accumsan. Sed facilisis iaculis ante in malesuada.</string>
+    <string name="Size">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</string>
+    <string name="Color_Available">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a mi sit amet massa dapibus congue</string>
+    <string name="deviceAdded">Device Added</string>
+    <string name="txtChoseSerial">Enter serial number</string>
+
+    <!-- Tittle heading -->
+
+    <string name="tittle_analytics">ANALYTICS</string>
+    <string name="tittle_community">COMMUNITY</string>
+    <string name="tittle_profile">PROFILE</string>
+    <string name="title_global_private">MY DEVICES</string>
+    <string name="tittle_myDevices">DEVICE LIST</string>
+    <string name="tittle_myDevices_public">CITY LIST</string>
+    <!--Tab layout -->
+    <string name="Knowledge">KNOWLEDGE</string>
+    <string name="News">NEWS</string>
+    <string name="Blogs">BLOG</string>
+    <string name="Devices">DEVICE</string>
+
+    <!--Slider -->
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GET STARTED</string>
+
+    <string name="txtDeviceDescription">Maecenas malesuada mattis urna eget ullamcorper. Fusce porttitor laoreet ligula at volutpat. Donec tempus diam quis luctus. Fusce porttitor laoreet ligula at volutpat.</string>
+
+    <string name="txtManageDevice">MANAGE DEVICE</string>
+    <string name="txtDeviceLocation">Device Location</string>
+    <string name="txtDevcelatitude">Latitude</string>
+    <string name="txtDeviceLongitude">Longitude</string>
+    <string name="hintDeviceName">Device Name</string>
+    <string name="hintWifiPassword">Wifi Password</string>
+    <string name="avg">Average AQI</string>
+
+    <!-- Error msg -->
+    <string name="errorEmail">Please Enter valid email address!!</string>
+    <string name="errorPass">Please enter valid password!!</string>
+    <string name="errorLogin">Unable to login with provided credentials! Try Again</string>
+    <string name="errorBlank">Please enter username and password..</string>
+    <string name="errorInternet">No internet connection found!!Please try again.</string>
+    <string name="errorAirOwlId">AirOwl id is invalid.Please re-enter the code.</string>
+    <string name="blankDeviceName">Device Name can not be empty!</string>
+    <string name="errorUsernameLenght">Please enter minimum 6 character for username!!</string>
+    <string name="errorPassword">Password and Conform Password must be smae!!</string>
+    <string name="errorPasswordlength">Please choose a password with at least 5 character</string>
+    <string name="errorBlankChange">This field can not be blank !!</string>
+    <string name="errorEqual">Current password and New password can not be smae !!</string>
+    <string name="errorNotEqal">New password and Current password is not same !!</string>
+    <string name="errorServerChangePassword">Error occurred while changing password, Please try again!</string>
+    <string name="errorTittle">We could\'t connect with AirOwl.Please check bellow detail.</string>
+    <string name="errorDetail1">Make sure that you have active internet connection in your Phone. \n\n Make sure that you are connected with AirOwl wifi before step-3. \n\n Make sure that you enter your wifi name and password correct(Case sensitive). \n\n Restart your AirOwl again to re-configure.</string>
+    <string name="errorDetail2">Make sure that you are connected with AirOwl wifi before step-3.</string>
+    <string name="errorDetail3">Make sure that you enter your wifi name and password correct(Case sensitive).</string>
+    <string name="errorDetail4">Restart your AirOwl again to re-configure.</string>
+    <string name="errorTurnoffMobileData">Please turn off your mobile data and try again!</string>
+    <string name="errorUnableToSendData">Unable to send data, Please turn off mobile data and try again</string>
+    <string name="errorGenral">Something went wrong , Please try after some time...</string>
+    <string name="errorLocation">Please turn on your location</string>
+    <string name="errorExit">Are you sure you want to Denied Purmission..</string>
+
+    <string name="failedUpdateDevice">Fail to update device. Please try again after some time!</string>
+
+    <string name="updatedDevice">Device Info successfully updated! Redirecting...</string>
+
+
+    <string name="txtBasicProfile">Basic Profile</string>
+    <string name="txtDevices">Devices</string>
+    <string name="txtActivity">Activity</string>
+    <string name="txtNotification">Notification</string>
+    <string name="txtAboutus">About Us</string>
+    <string name="txtversion">version 1.3+</string>
+    <string name="action_public">Public</string>
+    <string name="action_private">Private</string>
+    <string name="action_map">MapView</string>
+    <string name="action_list">ListView</string>
+    <string name="Activity1">Activity 1 is sellected</string>
+    <string name="txtUserid">Username</string>
+    <string name="txtEmail">Email</string>
+    <string name="Changepassword">Change Password</string>
+    <string name="logout">Logout</string>
+    <string name="successMesg">Password has been change..</string>
+
+    <string name="txtApply">Apply</string>
+    <string name="Logoutmsg">Are you sure you want to logout???</string>
+
+    <string name="ic_keyboard_arrow_down">&#xe0c5;</string>
+    <string name="ic_keyboard_arrow_left">&#xe0c6;</string>
+    <string name="ic_keyboard_arrow_right">&#xe0c7;</string>
+    <string name="ic_keyboard_arrow_up">&#xe0c8;</string>
+    <string name="ic_keyboard_backspace">&#xe0c9;</string>
+    <string name="ic_email">&#xe087;</string>
+    <string name="ic_close">&#xe048;</string>
+    <string name="ic_add">&#xe006;</string>
+    <string name="title">Title</string>
+
+    <string name="appTitle">Air Quality India</string>
+    <string name="description">Description</string>
+    <string name="failedToRegister">Failed to Register User, PleaseTry Again!</string>
+    <string name="autoLoginFailed">Auto login failed, please login manually!</string>
+    <string name="aqiLabel">AQI</string>
+    <string name="txtPolludrone">Polludrone</string>
+    <string name="forgotPass">Forgot password?</string>
+    <string name="infoLogin">To view / add your air-quality device, please fill up the details below and sign-in / up into your account</string>
+    <string name="lableSignUp">Don\'t have account yet ? <b>Sign up.</b></string>
+    <string name="about1">Air Quality India application provides you with Real time Air quality data from all across India. The data has been measured as per the standard norms given by Central Pollution Control Board of India. </string>
+    <string name="about2">Air Quality India App shows air quality based on the following parameters:</string>
+    <string name="about3">Particulate matter and particulate microns (PM 2.5 and PM10)</string>
+    <string name="about4">The hazardous and polluting gases in the atmosphere. </string>
+    <string name="about5">Gases like CO, CO2, SOx, Nox, So2, No2.</string>
+    <string name="about6">Humidity and temperature of the atmosphere.</string>
+    <string name="about7">Activity suggestion by Air Quality India app gives you suggestions based on pollution level in your area. Is it a good time to go for morning exercise? Should you take your pet for a walk? The activity suggestion by Air Quality India App gives you all the suggestions.</string>
+    <string name="about8">Air is a dynamic medium there is so much about it that you might be unaware about. Increase your pool of knowledge with the Knowledge centre provided by Air Quality India App. It has all the facts, informations and statistics about Air Pollution and Air Quality across the globe. The knowledge center acts as an encyclopedia about air.</string>
+    <string name="about9">Air Quality App allows you to compare the pollution levels of various cities. </string>
+    <string name="about10">With city comparison you can make wiser choices when planning your next vacation or shifting to a new area.</string>
+    <string name="about11">Add your own device into the Air quality India app. If you have purchased your DIY Air Quality Monitor, Airowl, you can add it and configure with the Air Quality India App. Air Quality India App gives you the chance to access the data and share the data of your device to the public and contribute to fight against pollution.</string>
+    <string name="about12">Last but not the least, Get notified whenever there are changes in the air quality or rise in the pollution levels and plan your activities.</string>
+
+    <string name="no">No</string>
+    <string name="gps_not_found_title">Location not found</string>
+    <string name="gps_not_found_message">Want to find your nearest location?</string>
+    <string name="yes">Yes</string>
+
+    <string name="txtEditManageDevice">Tap to edit device </string>
+    <string name="Knowledge1">The AQI is an \"index\" determined by calculating the degree of pollution in the city or at the monitoring point and includes five main pollutants - particulate matter, ground-level ozone, sulfur dioxide, carbon monoxide and nitrogen dioxide. Each of these pollutants have an air quality standard which is used to calculate the overall AQI for the city. </string>
+    <string name="Knowledge_heading1">0-50  HEALTHY</string>
+    <string name="Knowledge2">Air quality is considered satisfactory and air pollution poses little or no risk.</string>
+    <string name="Knowledge_heading2">51 - 151 GOOD</string>
+    <string name="Knowledge3">Air quality is acceptable, however, for some pollutants there may be a     moderate health concern for a very small number of people who are usually sensitive to air pollution.</string>
+    <string name="Knowledge_heading3">151 - 200  MODERATE</string>
+    <string name="Knowledge4">Everyone may begin to experience health effects; members of sensitive group may experience more serious health issues.</string>
+    <string name="Knowledge_heading4">201 - 300  POLLUTED</string>
+    <string name="Knowledge5">Health warning of emergency conditions. The entire population is more likely to be affected.</string>
+    <string name="Knowledge_heading5">300+\t HIGHLY POLLUTED</string>
+    <string name="Knowledge6">Health alert: everyone may experience more serious health effects.</string>
+    <string name="Knowledge11">In numbers, AQI is represented between 0 to 500 with 0 representing good air and 500 hazardous air. For better understanding and presentation, the AQI is broken down into six categories, each color coded with the number scale.</string>
+    <string name="Sensitivity_Level">Sensitivity Level</string>
+    <string name="Sensitivity_info">Level of pollution aroud your space</string>
+    <string name="notification">Notification</string>
+
+    <string name="analyticsCaption">Last 24 hours analytics data</string>
+    <string name="skipStep">Skip</string>
+    <string name="configWifi">Configure Wifi</string>
+    <string name="step1">Step 1 Connect to AirOwl</string>
+    <string name="msg">Please Enter your AirOwl ID.You will find the ID on  your AirOwl box.</string>
+    <string name="msg_breathi">Please Enter your Breath-i Id.You will find the ID on  your Breath-i box.</string>
+    <string name="hintAirOwlId">Enter your AirOwl id</string>
+    <string name="step2">Step 2 Switch Wifi</string>
+    <string name="msg_wifi">In order to connect AirOwl with your phone , please connect wifi to AirOwl.</string>
+    <string name="hintflow"><![CDATA[Setting > choose Wifi > airowl_xxxxx]]></string>
+    <string name="step3">Step 3 Enter your Wifi id and password.</string>
+    <string name="msgSkip">Already configured your AirOwl?</string>
+    <string name="txtSkip">Skip</string>
+    <string name="hintWifiName">Wifi Name</string>
+    <string name="lblAllmost">ALMOST THERE!</string>
+    <string name="msgPlease">Please make sure your phone is connected to your home wifi or mobile data.</string>
+    <string name="hintflowWifi"><![CDATA[Settings > choose Wifi > home network]]></string>
+    <string name="done">DONE</string>
+
+
+    <string name="fetchingLocation">Fetching your current location, please try after some time!</string>
+    <string name="city">City</string>
+    <string name="step1_breathi">Step 1 Connect to Breath-i</string>
+    <string name="hintflow_breathi"><![CDATA[Settings > choose Wifi > Breath-i_xxxxx]]></string>
+    <string name="loderMsg">Updating list...</string>
+    <string name="nointernetavailable">No internet connection available! Please connect to internet.</string>
+
+    <string name="cancel_dialog">No</string>
+    <string name="ok_dialog">Yes</string>
+    <string name="exit_dialog">Are you sure you want to quit?</string>
+    <string name="ledIndication">LED Indication</string>
+    <string name="pinkIndication">PINK: Ready to connect with wifi</string>
+    <string name="cyanIndication">CYAN : Connecting AirOwl with wifi</string>
+    <string name="blueIndication">BLUE (Blink): Connected with wifi</string>
+    <string name="magentaIndication">MAGENTA (Blink) : Error in connection</string>
+    <string name="loading">Loding</string>
+    <string name="successRegister">User registered successfully</string>
+
+    <!--Calender view -->
+    <string name="current_date">June, 2016</string>
+    <string name="add_event">ADD CALENDAR EVENT</string>
+    <string name="sun">SUN</string>
+    <string name="mon">MON</string>
+    <string name="tue">TUE</string>
+    <string name="wed">WED</string>
+    <string name="thu">THU</string>
+    <string name="fri">FRI</string>
+    <string name="sat">SAT</string>
+    <string name="last_date">30</string>
+    <string name="locationInfo">Current location not found. Please turn on your location\"</string>
+</resources>

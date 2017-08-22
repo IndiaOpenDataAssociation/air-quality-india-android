@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="5"
+    android:background="@android:color/white"
+    tools:context="com.idn0phl3108ed43d22s30.android.air.com.idn0phl3108ed43d22s30.AdddeviceBreathiWifi">
+
+    <include
+        android:id="@+id/toolBar"
+        layout="@layout/toolbar"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@+id/productHolder"
+        style="@style/header"
+        android:layout_below="@+id/toolBar"
+        android:background="@color/blue"
+        android:gravity="center"
+        android:visibility="visible">
+
+        <ImageView
+
+            android:id="@+id/tvbrathi"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:src="@drawable/air_owl_logo_cell"
+            android:tint="@android:color/white" />
+
+    </RelativeLayout>
+
+    <ScrollView
+
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/productHolder">
+
+        <LinearLayout
+
+            android:padding="@dimen/_15sdp"
+            style="@style/match_match"
+            android:layout_below="@+id/productHolder"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgAirOwl"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_150sdp"
+                android:layout_alignWithParentIfMissing="false"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:focusableInTouchMode="false"
+                android:src="@drawable/airowl_connect" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_10sdp"
+                android:layout_weight="1" />
+
+            <TextView
+                style="@style/match_wrap._tv_label_medium"
+                android:layout_below="@+id/imgAirOwl"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/txtChoseSerial"
+                android:typeface="sans" />
+
+            <EditText
+                android:id="@+id/etSerial"
+                style="@style/wrap_wrap.action.blue_oval_et"
+                android:hint="@string/hintserial"
+                android:inputType="text"
+                android:typeface="sans" />
+
+            <Button
+                android:id="@+id/btnConnect"
+                style="@style/btn_blue"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_45sdp"
+                android:layout_marginRight="@dimen/_45sdp"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:stateListAnimator="@null"
+                android:text="@string/btnConnect"
+                android:typeface="sans" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

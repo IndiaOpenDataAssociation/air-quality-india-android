@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relMainAirOwlId"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <include
+        android:id="@+id/toolBar"
+        style="@style/match_wrap"
+        layout="@layout/toolbar" />
+
+
+    <RelativeLayout
+        android:id="@+id/productHolder"
+        style="@style/header"
+        android:layout_below="@+id/toolBar"
+        android:background="@color/blue"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/tvAirOwl"
+            android:layout_width="140dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/air_owl_logo" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/productHolder"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:weightSum="13">
+
+        <ImageView
+            android:id="@+id/imgairOwl"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_90sdp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/airowl" />
+
+        <TextView
+            android:id="@+id/LblairOwlid"
+            style="@style/wrap_wrap_tv_label_large"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/ic_action_info_blue"
+            android:gravity="center"
+            android:text="@string/step1" />
+
+        <TextView
+            style="@style/match_wrap.small_txt"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/msg"
+            android:textColor="@color/textColor" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="@dimen/_10sdp"
+            app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout">
+
+            <EditText
+                android:id="@+id/etairOwlid"
+                style="@style/match_wrap.Text.Et.Float"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintAirOwlId"
+                android:imeOptions="actionDone"
+                android:maxLength="5"
+                android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_weight="0.5"
+            android:background="@drawable/customborder"
+            android:stateListAnimator="@null"
+            android:text="@string/next"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:typeface="sans" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

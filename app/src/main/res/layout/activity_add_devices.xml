@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    style="@style/match_match"
+    tools:context=".Ui.AddDevice">
+
+    <include
+        android:id="@+id/toolBar"
+        style="@style/match_wrap"
+        layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:id="@+id/productHolder"
+        style="@style/header"
+        android:layout_below="@+id/toolBar"
+        android:background="@color/blue"
+        android:gravity="center">
+
+        <TextView
+            style="@style/wrap_wrap"
+            android:gravity="center"
+            android:text="@string/selectPro"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:typeface="sans" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/match_match"
+        android:layout_below="@id/productHolder"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/match_wrap"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgairOwl"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:src="@drawable/air_owl" />
+
+            <ImageView
+                android:id="@+id/imgPolludrone"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:src="@drawable/polludrone" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            style="@style/match_wrap"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgBreath_i"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:src="@drawable/breath_i" />
+
+            <ImageView
+                android:id="@+id/imgzip"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:src="@drawable/zip" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

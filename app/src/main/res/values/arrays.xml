@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sampleStrings">
+        <item>  "Many people will never be bothered by air pollution because they don’t stop talking long enough to take a deep breathe. Air pollution is a broad term applied to any chemical, physical (particulate matter), or
+            biological agent that modifies the natural characteristics of the atmosphere.Worldwide air pollution is responsible for large numbers of deaths and cases of respiratory
+                                disease.   In simple terms, Air pollution is the pollution of air affecting the surrounding. It is the introduction of particulates, biological molecules, or other harmful materials
+                                into Earth's atmosphere, causing disease, death to humans, damage to other living organisms such as food crops, or the natural or built environment.With the development in industry, came along the increase in air
+                            pollution, which occurs inside homes, schools, offices even in the countryside. Consequently there has been an increase in the death rates resulting from various diseases caused by air
+                            pollution varying from breathing problem to lung cancer. It has reached such a critical stage where it affects the earth's atmosphere as it lets in more harmful radiation from the
+                            sun. Consequently, our polluted atmosphere is becoming a better insulator, thus, preventing heat from escaping back into space. That is why there is a global rise in temperature which
+                            scientists refer to as " global warming". As a result of this rise in temperature, the world’s food supply and sea level will be affected, also there is the probability of
+                            increase in the tropical disease."</item>
+        <item>"Android provides a rich application framework that allows you to build innovative apps and games for mobile devices in a Java language environment. The documents listed in the left navigation provide details about how to build apps using Android's various APIs."</item>
+        <item>"Android apps are built as a combination of distinct components that can be invoked individually. For instance, an individual activity provides a single screen for a user interface, and a service independently performs work in the background."</item>
+        <item>"From one component you can start another component using an intent. You can even start a component in a different app, such an activity in a maps app to show an address. This model provides multiple entry points for a single app and allows any app to behave as a user's "default" for an action that other apps may invoke."</item>
+        <item>"You can query the availability of device features at runtime if any app features require specific hardware such as a camera. If necessary, you can also declare features your app requires so app markets such as Google Play Store do not allow installation on devices that do not support that feature."</item>
+        <item>"Android provides an adaptive app framework that allows you to provide unique resources for different device configurations. For example, you can create different XML layout files for different screen sizes and the system determines which layout to apply based on the current device's screen size."</item>
+        <item>"Android provides a rich application framework that allows you to build innovative apps and games for mobile devices in a Java language environment. The documents listed in the left navigation provide details about how to build apps using Android's various APIs."</item>
+        <item>"Android provides a rich application framework that allows you to build innovative apps and games for mobile devices in a Java language environment. The documents listed in the left navigation provide details about how to build apps using Android's various APIs."</item>
+        <item>"Android provides a rich application framework that allows you to build innovative apps and games for mobile devices in a Java language environment. The documents listed in the left navigation provide details about how to build apps using Android's various APIs."</item>
+        <item>"Android provides a rich application framework that allows you to build innovative apps and games for mobile devices in a Java language environment. The documents listed in the left navigation provide details about how to build apps using Android's various APIs."</item>
+        <item>"Android provides a rich application framework that allows you to build innovative apps and games for mobile devices in a Java language environment. The documents listed in the left navigation provide details about how to build apps using Android's various APIs."</item>
+
+    </string-array>
+
+    <string-array name="question">
+
+        <item>"AIR POLLUTION"</item>
+        <item>"Android provides a rich application framework that allows you to build innovative "</item>
+        <item>"Android provides a rich application framework that allows you to build innovative "</item>
+        <item>"Android provides a rich application framework that allows you to build innovative "</item>
+        <item>"Android provides a rich application framework that allows you to build innovative "</item>
+        <item>"Android provides a rich application framework that allows you to build innovative "</item>
+        <item>"Android provides a rich application framework that allows you to build innovative "</item>
+        <item>"Android provides a rich application framework that allows you to build innovative "</item>
+        <item>"Android provides a rich application framework that allows you to build innovative "</item>
+        <item>"Android provides a rich application framework that allows you to build innovative "</item>
+        <item>"Android provides a rich application framework that allows you to build innovative "</item>
+
+    </string-array>
+</resources>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/match_match"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+
+            style="@style/match_match"
+            android:orientation="vertical"
+            android:padding="@dimen/pad_8dp">
+
+            <TextView
+                style="@style/wrap_wrap_tv_label_medium"
+                android:text="@string/Knowledge1" />
+
+            <TextView
+                style="@style/wrap_wrap_tv_label_medium"
+                android:text="@string/Knowledge11" />
+
+            <TextView
+                style="@style/wrap_wrap_tv_label_medium"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="@string/Knowledge_heading1"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/wrap_wrap_tv_label_medium"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="@string/Knowledge2" />
+
+            <TextView
+                style="@style/wrap_wrap_tv_label_medium"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="@string/Knowledge_heading2"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/wrap_wrap_tv_label_medium"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="@string/Knowledge3" />
+
+            <TextView
+                style="@style/wrap_wrap_tv_label_medium"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="@string/Knowledge_heading3"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/wrap_wrap_tv_label_medium"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="@string/Knowledge4" />
+
+            <TextView
+                style="@style/wrap_wrap_tv_label_medium"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="@string/Knowledge_heading4"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/wrap_wrap_tv_label_medium"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="@string/Knowledge5" />
+
+            <TextView
+                style="@style/wrap_wrap_tv_label_medium"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="@string/Knowledge_heading5"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/wrap_wrap_tv_label_medium"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="@string/Knowledge6" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

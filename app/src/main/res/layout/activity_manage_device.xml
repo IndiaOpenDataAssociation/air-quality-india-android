@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayoutManageDevice"
+    style="@style/match_match"
+    android:background="@android:color/white">
+
+
+    <include
+        android:id="@+id/toolBar"
+        style="@style/match_wrap"
+        layout="@layout/toolbar" />
+
+
+    <RelativeLayout
+        android:id="@+id/productHolder"
+        style="@style/header"
+        android:layout_below="@+id/toolBar"
+        android:background="@color/blue"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/txtManageDevice"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        style="@style/match_wrap"
+        android:layout_below="@+id/productHolder">
+
+        <LinearLayout
+            style="@style/match_match"
+            android:orientation="vertical"
+            android:padding="@dimen/pad_20dp">
+
+            <EditText
+
+                android:id="@+id/etDeviceName"
+                style="@style/wrap_wrap.action.blue_oval_et"
+                android:hint="@string/hintDeviceName"
+                android:imeOptions="actionDone"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/etChooseWifiName"
+                style="@style/wrap_wrap.action.blue_oval_et"
+                android:layout_marginTop="@dimen/pad_8dp"
+                android:background="@color/F0F3F4"
+                android:hint="@string/txtChoseWifi"
+                android:visibility="gone" />
+
+
+            <EditText
+                android:id="@+id/etWifiPassword"
+                style="@style/wrap_wrap.action.blue_oval_et"
+                android:layout_marginTop="@dimen/pad_8dp"
+                android:drawableTint="@color/colorAccent"
+                android:hint="@string/hintWifiPassword"
+                android:inputType="textPassword"
+                android:visibility="gone" />
+
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:buttonTint="@color/blue"
+                android:text="Show password"
+                android:textColor="@color/textColor"
+                android:visibility="gone" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="#80D3EFF1"
+                android:orientation="vertical"
+                android:padding="@dimen/pad_5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="@dimen/pad_5dp"
+                    android:text="@string/txtDeviceLocation"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/blue" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:text="@string/txtDevcelatitude"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/blue" />
+
+                    <TextView
+                        android:id="@+id/txtLatitude"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1.6"
+                        android:text="0.0°"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/textColor" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="@dimen/pad_8dp"
+                        android:layout_weight="1"
+                        android:text="@string/txtDeviceLongitude"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/blue" />
+
+                    <TextView
+                        android:id="@+id/txtLongitude"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="2"
+                        android:text="0.0°"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/textColor" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical"
+                android:padding="@dimen/pad_5dp">
+
+                <Button
+                    android:id="@+id/btnConfigure"
+                    style="?android:buttonBarStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/customborder"
+                    android:gravity="center"
+                    android:text="Change Wifi Settings"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#FFFFFF"
+                    android:visibility="visible" />
+
+
+                <Button
+                    android:id="@+id/btnSave"
+                    style="?android:buttonBarStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/customborder"
+                    android:gravity="center"
+                    android:text="SAVE"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#FFFFFF"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

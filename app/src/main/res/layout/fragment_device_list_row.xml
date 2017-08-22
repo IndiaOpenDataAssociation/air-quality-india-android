@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relDevice"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="16dp"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgDeviceImg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true" />
+
+        <TextView
+            android:id="@+id/txtDeviceName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imgDeviceImg"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="@dimen/pad_20dp"
+            android:padding="@dimen/item_offset"
+            android:text="@string/BreathI"
+            android:textColor="@color/blue"
+            android:visibility="gone"
+            android:textSize="30sp"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/txtDeviceDescription"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtDeviceName"
+            android:padding="8dp"
+            android:text="@string/txtDeviceDescription"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/txtDetail" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

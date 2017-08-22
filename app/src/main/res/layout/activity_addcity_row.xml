@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtCountry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="@dimen/pad_5dp"
+        android:text="India"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/textColor"
+        android:typeface="sans" />
+
+    <include layout="@layout/activity_divider" />
+
+
+    <TextView
+
+        android:id="@+id/txtCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+        android:padding="@dimen/pad_5dp"
+        android:text="Ahmedabad"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/textColor"
+        android:typeface="sans" />
+
+    <include
+        layout="@layout/activity_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/city_margin" />
+
+    <TextView
+
+        android:id="@+id/txtArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="30dp"
+        android:padding="@dimen/pad_5dp"
+        android:text="Ranip"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/textColor"
+        android:typeface="sans" />
+
+    <include
+        layout="@layout/activity_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/area_margin" />
+
+
+</LinearLayout>

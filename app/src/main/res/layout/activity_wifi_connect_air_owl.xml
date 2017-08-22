@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/relMain"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <include
+        android:id="@+id/toolBar"
+        style="@style/match_wrap"
+        layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:id="@+id/productHolder"
+        style="@style/header"
+        android:layout_below="@+id/toolBar"
+        android:background="@color/blue"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/tvAirOwl"
+            android:layout_width="140dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/air_owl_logo" />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/productHolder">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:weightSum="21">
+
+            <ImageView
+                android:id="@+id/imgWifi"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_75sdp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/wifi" />
+
+
+            <TextView
+                android:id="@+id/LblairOwlid"
+                style="@style/wrap_wrap_tv_label_medium"
+                android:layout_gravity="center"
+                android:drawablePadding="@dimen/pad_5dp"
+                android:drawableRight="@drawable/ic_action_info_blue"
+                android:gravity="center"
+                android:text="@string/step2" />
+
+
+            <TextView
+                style="@style/match_wrap.small_txt"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/msg_wifi"
+                android:textColor="@color/textColor" />
+
+            <TextView
+                style="@style/match_wrap._tv_label_medium"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/hintflow"
+                android:textColor="@color/blue" />
+
+            <View
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/pad_1dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/pad_8dp"
+                android:background="@color/divider"
+                android:padding="@dimen/_5sdp" />
+
+            <TextView
+                android:id="@+id/txtStep"
+                style="@style/wrap_wrap_tv_label_medium"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/pad_8dp"
+                android:drawablePadding="@dimen/pad_1dp"
+                android:drawableRight="@drawable/ic_action_info_blue"
+                android:gravity="center"
+                android:text="@string/step3" />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_ssid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/pad_10dp"
+                android:paddingLeft="@dimen/pad_8dp"
+                android:paddingRight="@dimen/pad_8dp"
+                app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout">
+
+                <EditText
+                    android:id="@+id/etwifiName"
+                    style="@style/match_wrap.Text.Et.Float"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hintWifiName"
+                    android:imeOptions="actionNext"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/pad_5dp"
+                android:paddingLeft="@dimen/pad_8dp"
+                android:paddingRight="@dimen/pad_8dp">
+
+                <com.scottyab.showhidepasswordedittext.ShowHidePasswordEditText
+                    android:id="@+id/etWifipassword"
+                    style="@style/match_wrap.Text.Et.Float"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:hint="@string/hintPassword"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
+                    app:drawable_hide="@drawable/edittext_hide_eye_icon"
+                    app:drawable_show="@drawable/edittext_show_eye_icon"
+                    app:tint_color="@color/blue" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="@dimen/pad_5dp"
+                android:background="@drawable/customborder"
+                android:stateListAnimator="@null"
+                android:text="@string/next"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:typeface="sans" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/match_wrap.small_txt"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/msgSkip"
+                    android:textColor="@color/textColor" />
+
+                <TextView
+                    android:id="@+id/txtSkip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/pad_5dp"
+                    android:paddingRight="@dimen/pad_5dp"
+                    android:paddingTop="@dimen/pad_5dp"
+                    android:text="@string/txtSkip"
+                    android:textColor="@color/blue"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

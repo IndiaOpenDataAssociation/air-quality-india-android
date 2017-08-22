@@ -1,0 +1,333 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolBar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:id="@+id/Scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolBar">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/pad_10dp">
+
+            <ImageView
+                android:id="@+id/thumbnail"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="false"
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/imgbrathicell" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/thumbnail"
+                android:layout_marginLeft="2dp"
+                android:padding="5dp"
+                android:text="Breath-i"
+                android:textColor="@color/blue"
+                android:textSize="22sp"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title"
+                android:drawableLeft="@drawable/ic_shoping_20"
+                android:drawablePadding="@dimen/pad_10dp"
+                android:gravity="center"
+                android:paddingBottom="@dimen/songs_count_padding_bottom"
+                android:paddingLeft="@dimen/album_title_padding"
+                android:paddingRight="@dimen/album_title_padding"
+                android:text="215"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/textColorSecondary"
+                android:typeface="sans" />
+
+            <LinearLayout
+                android:id="@+id/rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/count"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:id="@+id/chkState1"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/toggle_selector"
+                    android:checked="false"
+                    android:padding="6dp"
+                    android:textOff=""
+                    android:textOn="" />
+
+                <ToggleButton
+                    android:id="@+id/chkState2"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/toggle_selector"
+                    android:checked="false"
+                    android:padding="6dp"
+                    android:textOff=""
+                    android:textOn="" />
+
+                <ToggleButton
+                    android:id="@+id/chkState3"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/toggle_selector"
+                    android:checked="false"
+                    android:padding="6dp"
+                    android:textOff=""
+                    android:textOn="" />
+
+                <ToggleButton
+                    android:id="@+id/chkState4"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/toggle_selector"
+                    android:checked="false"
+                    android:padding="6dp"
+                    android:textOff=""
+                    android:textOn="" />
+
+                <ToggleButton
+                    android:id="@+id/chkState5"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/toggle_selector"
+                    android:checked="false"
+                    android:padding="6dp"
+                    android:textOff=""
+                    android:textOn="" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/thumbnail"
+                android:layout_marginRight="15dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/pad_5dp">
+
+                <TextView
+                    android:id="@+id/lblPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/ic_album_overflow_margin_top"
+                    android:text="Price :"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textColorSecondary"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/ic_album_overflow_margin_top"
+                    android:text="$252"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/textColorSecondary" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rating"
+                android:layout_marginTop="@dimen/pad_10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/thumbnail"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="@dimen/margin15"
+                    android:padding="5dp"
+                    android:text="Features:"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/txtLable"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/thumbnail"
+                    android:layout_marginLeft="2dp"
+                    android:paddingLeft="@dimen/pad_5dp"
+                    android:text="@string/Features1"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/txtDetail"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="2dp"
+                    android:paddingLeft="@dimen/pad_5dp"
+                    android:text="@string/Features2"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/txtDetail"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:paddingLeft="@dimen/pad_5dp"
+                    android:text="@string/Features3"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/txtDetail"
+                    android:typeface="sans" />
+
+
+                <!-- Specification -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/thumbnail"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="@dimen/margin15"
+                    android:padding="5dp"
+                    android:text="Specifications:"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/txtLable"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/thumbnail"
+                    android:layout_marginLeft="2dp"
+                    android:paddingLeft="@dimen/pad_5dp"
+                    android:text="@string/Specification"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/txtDetail"
+                    android:typeface="sans" />
+
+                <!-- Size -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/thumbnail"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="@dimen/margin15"
+                    android:padding="5dp"
+                    android:text="Size:"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/txtLable"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/thumbnail"
+                    android:layout_marginLeft="2dp"
+                    android:paddingLeft="@dimen/pad_5dp"
+                    android:text="@string/Size"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/txtDetail"
+                    android:typeface="sans" />
+
+                <!-- Color Available -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/thumbnail"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="@dimen/margin15"
+                    android:padding="5dp"
+                    android:text="Color Available:"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/txtLable"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/thumbnail"
+                    android:layout_marginLeft="2dp"
+                    android:paddingLeft="@dimen/pad_5dp"
+                    android:text="@string/Color_Available"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/txtDetail"
+                    android:typeface="sans"
+                    android:layout_marginBottom="60dp"/>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+    <LinearLayout
+        style="@style/match_wrap"
+        android:layout_marginTop="25dp"
+        android:layout_alignParentBottom="true"
+
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:padding="15dp"
+            android:background="@color/blue"
+            android:text="BUY NOW"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:typeface="sans" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/pad_5dp"
+        android:paddingRight="@dimen/pad_5dp">
+
+        <TextView
+            android:id="@+id/txtbasicProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_action_username"
+            android:drawablePadding="@dimen/pad_10dp"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:text="@string/txtBasicProfile"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/txt_20sp" />
+
+        <include layout="@layout/activity_divider" />
+
+        <TextView
+            android:id="@+id/txtdevice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_action_device_bold"
+            android:drawablePadding="@dimen/pad_10dp"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:text="@string/txtDevices"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/txt_20sp" />
+
+        <View xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/deviceBorder"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider" />
+
+        <TextView
+            android:id="@+id/txtactivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_action_activity"
+            android:drawablePadding="@dimen/pad_10dp"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:text="@string/txtActivity"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/txt_20sp"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/activityBorder"
+            layout="@layout/activity_divider"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/notification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_action_notification"
+            android:drawablePadding="@dimen/pad_10dp"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:text="@string/txtNotification"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/txt_20sp"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/deviceBorder_notification"
+            layout="@layout/activity_divider"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/txtaboutUs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_action_logo_on_white"
+            android:drawablePadding="@dimen/pad_10dp"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:text="@string/txtAboutus"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/txt_20sp" />
+
+        <include layout="@layout/activity_divider" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:gravity="bottom"
+            android:text="@string/txtversion"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/textColor" />
+
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

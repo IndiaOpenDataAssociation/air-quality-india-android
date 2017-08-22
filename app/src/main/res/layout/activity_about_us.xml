@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".Ui.AboutUs">
+
+    <include
+        android:id="@+id/toolBar"
+        style="@style/match_wrap"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/textView"
+                style="@style/wrap_wrap_tv_label_medium"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="@string/about1" />
+
+            <TextView
+                style="@style/wrap_wrap_tv_label_large"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="IoT Environmental Instruments" />
+
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/wrap_wrap_tv_label_medium"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/pad_8dp"
+                android:text="@string/about2" />
+
+            <TextView
+                style="@style/wrap_wrap_tv_label_large"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Environmental Data- Acquisition " />
+
+            <TextView
+                android:id="@+id/textView3"
+                style="@style/wrap_wrap_tv_label_medium"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/pad_8dp"
+                android:text="@string/about3" />
+
+            <TextView
+                style="@style/wrap_wrap_tv_label_large"
+                android:layout_marginTop="@dimen/pad_10dp"
+                android:text="Pollution Source Spotting" />
+
+            <TextView
+                android:id="@+id/textView4"
+                style="@style/wrap_wrap_tv_label_medium"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/pad_5dp"
+                android:text="@string/about4" />
+
+            <TextView
+                style="@style/wrap_wrap_tv_label_large"
+                android:layout_marginTop="@dimen/pad_10dp"
+                android:text="Forecasting and Climate-change Analysis" />
+
+
+            <TextView
+                android:id="@+id/textView5"
+                style="@style/wrap_wrap_tv_label_medium"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/pad_5dp"
+                android:text="@string/about5" />
+
+
+            <TextView
+                style="@style/wrap_wrap_tv_label_large"
+                android:layout_marginTop="@dimen/pad_8dp"
+                android:text="Bringing Change through Awareness " />
+
+            <TextView
+                android:id="@+id/textView6"
+                style="@style/wrap_wrap_tv_label_medium"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/pad_5dp"
+                android:text="@string/about6" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

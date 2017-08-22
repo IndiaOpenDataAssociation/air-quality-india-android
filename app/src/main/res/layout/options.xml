@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_weight="3"
+    android:id="@+id/tableRow1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+
+    <TextView
+        android:id="@+id/optionL"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:paddingLeft="10dp"
+        android:text="Low" />
+
+    <TextView
+        android:id="@+id/optionM"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:paddingRight="6dp"
+        android:text="Medium" />
+
+    <TextView
+        android:id="@+id/optionH"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:paddingRight="8dp"
+        android:text="High" />
+
+</TableRow>

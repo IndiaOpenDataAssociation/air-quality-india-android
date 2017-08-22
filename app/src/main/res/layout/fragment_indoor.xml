@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/match_match"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            style="@style/match_match"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/pad_8dp"
+            android:paddingRight="@dimen/pad_8dp"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/wrap_wrap_tv_label_large"
+                    android:gravity="center"
+                    android:text="Pick your favourite activity"
+                    android:textColor="@color/green" />
+            </LinearLayout>
+
+
+            <include layout="@layout/activity_divider" />
+
+            <LinearLayout
+
+                style="@style/match_wrap"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/pad_5dp">
+
+                <ImageView
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:src="@drawable/activity1" />
+
+                <TextView
+                    style="@style/wrap_wrap_tv_label_large"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:text="Outdoor execersize" />
+
+            </LinearLayout>
+
+            <include layout="@layout/activity_divider" />
+
+            <LinearLayout
+
+                style="@style/match_wrap"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/pad_5dp">
+
+                <ImageView
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:src="@drawable/activity1" />
+
+                <TextView
+                    style="@style/wrap_wrap_tv_label_large"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:text="Outdoor execersize" />
+
+            </LinearLayout>
+
+            <include layout="@layout/activity_divider" />
+
+            <LinearLayout
+
+                style="@style/match_wrap"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/pad_5dp">
+
+                <ImageView
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:src="@drawable/activity1" />
+
+                <TextView
+                    style="@style/wrap_wrap_tv_label_large"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:text="Outdoor execersize" />
+
+            </LinearLayout>
+
+            <include layout="@layout/activity_divider" />
+
+            <LinearLayout
+
+                style="@style/match_wrap"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/pad_5dp">
+
+                <ImageView
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:src="@drawable/activity1" />
+
+                <TextView
+                    style="@style/wrap_wrap_tv_label_medium"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:text="Outdoor execersize" />
+
+            </LinearLayout>
+
+            <include layout="@layout/activity_divider" />
+
+            <LinearLayout
+
+                style="@style/match_wrap"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/pad_5dp">
+
+                <ImageView
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:src="@drawable/activity1" />
+
+                <TextView
+                    style="@style/wrap_wrap_tv_label_medium"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:text="Outdoor execersize" />
+
+            </LinearLayout>
+
+            <include layout="@layout/activity_divider" />
+
+            <LinearLayout
+                style="@style/match_wrap"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/pad_5dp">
+
+                <ImageView
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:src="@drawable/activity1" />
+
+                <TextView
+                    style="@style/wrap_wrap_tv_label_medium"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:text="Outdoor execersize" />
+
+            </LinearLayout>
+
+            <include layout="@layout/activity_divider" />
+
+            <LinearLayout
+                style="@style/match_wrap"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_50sdp"
+                    android:layout_marginRight="@dimen/_50sdp"
+                    android:background="@drawable/border_rectangle"
+                    android:text="DONE"
+                    android:textColor="@color/green" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

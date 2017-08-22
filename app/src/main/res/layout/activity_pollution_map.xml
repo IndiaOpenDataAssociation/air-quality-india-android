@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PollutionMap">
+
+    <!--<com.mapbox.mapboxsdk.maps.MapView-->
+        <!--android:id="@+id/mapView"-->
+        <!--style="@style/match_match"-->
+        <!--mapbox:access_token="pk.eyJ1IjoicnV0dWwiLCJhIjoiY2lycTFpcmFqMDA5d2hrbTFnaGVpZ2l2cyJ9.SSLm4SjDIPIA5VEldk4&#45;&#45;w"-->
+        <!--mapbox:center_latitude="28.6139"-->
+        <!--mapbox:center_longitude="77.2090"-->
+        <!--mapbox:style_url="mapbox://styles/mapbox/streets-v9"-->
+        <!--mapbox:zoom="9" />-->
+
+</RelativeLayout>

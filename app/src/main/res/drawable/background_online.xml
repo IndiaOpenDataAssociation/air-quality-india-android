@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/half_overlay"
+        android:drawable="@drawable/ic_active"
+        android:width="@dimen/ic_online"
+        android:height="@dimen/ic_online"
+        />
+
+</layer-list>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card3"
+    android:layout_width="match_parent"
+    android:layout_height="230dp">
+
+    <include
+        android:id="@+id/chart_toolbar"
+        layout="@layout/card_toolbar" />
+
+    <com.db.chart.view.BarChartView xmlns:chart="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/chart3"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_below="@+id/chart_toolbar"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        chart:chart_fontSize="15sp" />
+
+</RelativeLayout>

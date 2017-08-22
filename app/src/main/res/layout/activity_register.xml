@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    style="@style/match_match"
+    android:background="@color/bg">
+
+    <ScrollView
+        style="@style/match_wrap"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/imgLogo"
+                style="@style/match_wrap"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="@dimen/_200sdp"
+                    android:layout_height="@dimen/_200sdp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/open_environment_logo"
+                     />
+
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_10sdp" />
+
+                <EditText
+                    android:id="@+id/etEmail"
+                    style="@style/wrap_wrap.action.gray_oval_et"
+                    android:hint="@string/hintEmaul"
+                    android:inputType="textEmailAddress" />
+
+                <EditText
+                    android:id="@+id/etPassword"
+                    style="@style/wrap_wrap.action.gray_oval_et"
+                    android:layout_marginTop="@dimen/margin15"
+                    android:hint="@string/hintPassword"
+                    android:inputType="textPassword" />
+
+                <EditText
+                    android:id="@+id/etConformPass"
+                    style="@style/wrap_wrap.action.gray_oval_et"
+                    android:layout_marginTop="@dimen/margin15"
+                    android:hint="@string/hintConformPass"
+                    android:inputType="textPassword" />
+
+                <CheckBox
+                    android:id="@+id/checkbox"
+                    style="@style/wrap_wrap.chkbox"
+                    android:layout_gravity="end"
+                    android:buttonTint="@color/hintColor"
+                    android:padding="@dimen/_10sdp"
+                    android:text="Show password"
+                    android:textColor="@color/hintColor"
+                    android:typeface="sans" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/match_wrap"
+                android:layout_marginBottom="35dp"
+                android:layout_marginTop="@dimen/margin15"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/signBtn"
+                    style="@style/btn_blue"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:stateListAnimator="@null"
+                    android:text="@string/txtSignup" />
+
+                <Button
+                    android:id="@+id/signUpBtn"
+                    style="@style/btn_blue"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:stateListAnimator="@null"
+                    android:text="@string/login_facebook"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/googleBtn"
+                    style="@style/btn_blue"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:stateListAnimator="@null"
+                    android:text="@string/login_google"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</android.support.design.widget.CoordinatorLayout>
